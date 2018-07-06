@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    line-height: 1.1;
+    /* color:#333; */
+    overflow-x: hidden;
+
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color:#fff;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fullscreen-bg video{
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.header-overlay{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left:0;
+    background: #225470;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.header-content{
+    position: relative;
+    z-index: 2;
+}
+
+#loginContainer *{
+    color:#fff;
+    font-weight: normal;
+}
+
+#loginContainer{
+    width: 60%;
+    margin: 80px 190px;
+    position: relative;
+    max-width: 1024px;
+}
+
+.inner {
+    width: 400px;
+    
+    padding: 160px  40px;
+    float: left;
+    border-right: 1px solid ;
+}
+.outer {
+    width: 400px;
+    padding: 40px  40px;
+    float: left;
+    border-right: 1px solid ;
+  }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:   #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:   #fff;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:   #fff;
+}
+
+
+#inputContainer h2{
+    text-align: center;
+}
+
+#inputContainer input[type="text"]{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#inputContainer input[type="email"]{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#inputContainer input[type="password"]{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#inputContainer label{
+    color:#C0C0C0;
+    margin-top: 15px;
+}
+
+/* #inputContainer button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color:#fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin:20px auto;
+    height:41px;
+    width: 100%;
+
+}
+
+#inputContainer button:hover{
+    cursor: pointer;
+} */
+
+
+@media(max-width:960px){
+    .container{
+        padding-right: 3rem;
+        padding-left: 3rem;  
+    }
+}
+
+.hasAccountText span{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.hasAccountText{
+    text-align: center;
+}
+
+input.middle:focus {
+    outline-width: 0;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+}
+
+
+/* Common button styles */
+.button {
+	float: left;
+	min-width: 300px;
+	max-width: 300px;
+	display: block;
+	margin: 1em;
+
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+/* Moema */
+.button--moema {
+	padding: 1.5em 3em;
+	border-radius: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+.button--moema.button--inverted {
+	background: #ECEFF1;
+	color: #37474f;
+}
+.button--moema::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+.button--moema:hover {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+    background-color: #34b3a0;
+    cursor:pointer;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+.button--moema.button--inverted:hover {
+	color: #ECEFF1;
+	background-color: #34b3a0;
+}
+.button--moema:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@-webkit-keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+
+
+/* Minoru */
+.input__field--minoru {
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 0px 0px 2px transparent;
+	color: #34b3a0;
+	-webkit-transition: box-shadow 0.3s;
+	transition: box-shadow 0.3s;
+}
+
+.input__label--minoru {
+	padding: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.input__label--minoru::after {
+	content: '';
+  	position: absolute;
+  	top: 0;
+  	z-index: -1;
+  	width: 100%;
+  	height: 4em;
+	box-shadow: 0px 0px 0px 0px;
+	color: rgba(199,152,157, 0.6);
+}
+
+.input__field--minoru:focus {
+	box-shadow: 0px 0px 0px 2px #34b3a0;
+}
+
+.input__field--minoru:focus + .input__label--minoru {
+	pointer-events: none;
+}
+
+.input__field--minoru:focus + .input__label--minoru::after {
+	-webkit-animation: anim-shadow 0.3s forwards;
+	animation: anim-shadow 0.3s forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+	to {
+		box-shadow: 0px 0px 100px 50px;
+    	opacity: 0;
+	}
+}
+
+@keyframes anim-shadow {
+	to {
+		box-shadow: 0px 0px 100px 50px;
+    	opacity: 0;
+	}
+}
+
+.input__label-content--minoru {
+	padding: 0.75em 0.15em;
+}
