@@ -26,6 +26,52 @@
     </head>
 
     <body>
+
+        <div id="topContainer">
+            <div id="navBarContainer">
+                <nav class="navBar">
+                    <a style="text-decoration:none;" href="index.php" class="logo">
+                        <img src="assets/images/icons/birth.png" alt="Icon">
+                        <span class="logoTitle">For DearAsta🎂</span>
+                    </a>
+
+                    <div class="group">
+                        <div class="navItem">
+                            <a href="search.php" style="text-decoration:none;" class="navItemLink">Search
+                                <img src="assets/images/icons/search.png" class="searchIcon" alt="Search">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="navItem">
+                            <a href="profile.php" style="text-decoration:none;" class="navItemLink">Profile</a>
+                        </div>
+                        <div class="navItem">
+                            <a href="browse.php" style="text-decoration:none;" class="navItemLink">Browse</a>
+                        </div>
+                        <div class="navItem">
+                            <a href="myMusic.php" style="text-decoration:none;" class="navItemLink">My Music</a>
+                        </div>
+                        
+                        <div class="navItem">
+                            <a href="chat.php" style="text-decoration:none;" class="navItemLink">Chat</a>
+                        </div>
+                    </div>
+                    
+                    
+                </nav>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
         <div id="nowPlayingBarContainer">
             <div id="nowPlayingBar">
                 <div id="nowPlayingLeft">
@@ -35,7 +81,7 @@
 
                     <div class="trackInfo">
                         <span class="trackName">
-                            <span>Happy Birthday</span>
+                            <span>How Long (to my asta)</span>
 
                         </span>
 
@@ -101,6 +147,8 @@
                         </div>
                     </div>
                 </div>
+
+                
             </div>
         </div>
     </body>

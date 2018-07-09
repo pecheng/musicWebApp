@@ -149,3 +149,64 @@ html, body{
     width: 125px;
 }
 
+
+
+#topContainer{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+#navBarContainer{
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.85;
+}
+
+.navBar{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img{
+    width: 30px;
+}
+.logo{
+    padding-bottom: 15px ;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.navBar .group{
+    padding:15px 0;
+    border-top: 1px solid #a0a0a0;
+}
+
+.navItem{
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+    display : block;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.navItemLink{
+    color:#a0a0a0;
+    transition: all 0.5s;
+}
+
+.navItemLink:hover{
+    color:#ffffff;
+}
+
+.searchIcon{
+    position: absolute;
+    right:0;
+    top:6px;
+    width:25px;
+}

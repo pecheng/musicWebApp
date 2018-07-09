@@ -61,7 +61,7 @@
 
             <button type="submit" name = "loginButton" class="button button--moema button--border-thick button--size-s">Log in</button> 
             <div class="hasAccountText">
-                <span id="hideLogin">Don't have an account yet? Sign up here. </span>
+                <span id="hideLogin" style="cursor:pointer;">Don't have an account yet? Sign up here. </span>
             </div>
             </div>
         </form>
@@ -120,7 +120,7 @@
 
             <button type="submit" name = "registerButton" class="button button--moema button--border-thick button--size-s">Sign up</button>
             <div class="hasAccountText">
-                <span id="hideRegister">Already have an account. Log in here. </span>
+                <span id="hideRegister" style="cursor:pointer;">Already have an account. Log in here. </span>
             </div>
             </div>
         </form>
